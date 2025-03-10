@@ -15,7 +15,7 @@ export default function Home() {
           ✦
           <p className="font-sans text-xs pt-6">{`Thanks for stopping by! This site is very much a work in progress but I really wanted my web home to be live.`}
             <br/><br/>
-            If you're curious, I invite you to take a peek at my <a href="https://annieln.github.io/" className="text-(--primary) text-bold underline">old site</a> to see some of my work while you wait. ◡̈
+            {`If you're curious, I invite you to take a peek at my `} <a href="https://annieln.github.io/" className="text-(--primary) text-bold underline">old site</a> {`to see some of my work while you wait. ◡̈`}
             <br/><br/>
             {`Check back in soon, I promise there will be much more to see!`}</p>
         </div>
