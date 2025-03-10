@@ -23,7 +23,7 @@ const Profile = () => {
           <span className="font-bold">mood:</span> zzz...
         </p>
         <p>
-          <span className="font-bold">last online:</span> march 6, 2025
+          <span className="font-bold">last online:</span> march 10, 2025
         </p>
       </div>
     </>
