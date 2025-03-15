@@ -36,11 +36,13 @@ const Profile = () => {
         <div className="w-fit flex sm:flex-col xl:flex-row justify-content gap-8">
           <TamaNotchi
             name='umeshu'
-            link='https://tamanotchi.world/i2/20776'
+            src='https://tamanotchi.world/i2/20776'
+            link='https://tamanotchi.world/20776c'
           />
           <TamaNotchi
             name='kopiko'
-            link='https://tamanotchi.world/i2/20460'
+            src='https://tamanotchi.world/i2/20460'
+            link='https://tamanotchi.world/20460c'
           />
         </div>
       </div>

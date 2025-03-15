@@ -6,9 +6,10 @@ import { useState } from "react";
 interface TamaNotchiProps {
     name: string;
     link: string;
+    src: string;
 } 
 
-export default function TamaNotchi({name, link}: TamaNotchiProps) {
+export default function TamaNotchi({name, link, src}: TamaNotchiProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hover, setHover] = useState(false);
 
@@ -23,8 +24,9 @@ export default function TamaNotchi({name, link}: TamaNotchiProps) {
       onMouseLeave={() => setHover(false)}
       onMouseMove={handleMouseMove}
     >
+    <a href={link}>
       <Image 
-        src={link}
+        src={src}
         alt="It's tamaNOTchi! Click to feed!" 
         width={0} 
         height={0} 
@@ -44,6 +46,7 @@ export default function TamaNotchi({name, link}: TamaNotchiProps) {
           click to feed {name}
         </div>
       )}
+    </a>
     </div>
   );
 }
