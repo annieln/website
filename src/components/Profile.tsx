@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import TamaNotchi from './TamaNotchi';
 
 const Profile = () => {
 
@@ -20,11 +21,28 @@ const Profile = () => {
       </div>
       <div className="flex flex-col font-sans text-xs py-4">
         <p>
-          <span className="font-bold">mood:</span> zzz...
+          <span className="font-bold">mood:</span> feeling creative!
         </p>
         <p>
-          <span className="font-bold">last online:</span> march 10, 2025
+          <span className="font-bold">last online:</span> 03-15-2025
         </p>
+      </div>
+      
+      {/* Virtual Pets! */}
+      <div className="flex flex-col items-center gap-3 px-6 py-4 border-2 border-dashed border-(--primary) rounded-sm">
+        <p className="font-bold font-serif text-xs">
+          ~ meet my virtual pets ~
+        </p>
+        <div className="w-fit flex sm:flex-col xl:flex-row justify-content gap-8">
+          <TamaNotchi
+            name='umeshu'
+            link='https://tamanotchi.world/i2/20776'
+          />
+          <TamaNotchi
+            name='kopiko'
+            link='https://tamanotchi.world/i2/20460'
+          />
+        </div>
       </div>
     </>
   );
